@@ -1,0 +1,182 @@
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+}
+li.dropdown {
+    display: inline-block;
+}
+
+li a, .drop {
+    display: inline-block;
+    color: #E9E9E9;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px 16px;
+    font-size: medium;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #CCCCCC;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+li a.active {
+    background-color: #E00000;
+    color: white;
+}
+
+li a:hover:not(.active) {
+color: white;
+background-color: #555;
+
+}
+
+#footer {
+	background: white;
+	position: absolute ;
+	text-align: right;
+	color: black;
+	font-size: 8pt;
+	border-width: 3px 0 0 0;
+	border-style: solid;
+	border-color: silver;
+    bottom: 0;
+    width: 99%;
+}
+h1.toph{
+font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+position: absolute;
+left: 80px;
+font-size: 25px;
+}
+
+p{
+     text-align: justify;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:  #333;
+    min-width: 160px;
+    z-index: 5;
+}
+
+img.logo{
+  width: 70px;
+  height: 75px;
+  padding: 2px;
+
+}
+
+h1 {
+    font-size: 20px;
+    padding: 0px;
+}
+table.parameters_table{
+       position: relative;
+        padding: 0px;
+        width: 80%;
+        margin: auto;
+}
+table.parameters_table td{
+        padding: 0px;
+}
+
+table.parameters_table1 {
+   display: inline-block;
+   padding: 10px;
+}
+
+.run_button{
+    position: absolute;
+   float: right;
+  margin-top: 40px;
+  margin-left: 70px;
+  z-index: 1;
+
+}
+.stop_button{
+   position: absolute;
+   float: left;
+   display: none;
+    margin-top: 40px;
+    margin-left: 130px;
+     z-index: 2;
+}
+
+.linebreak{
+    border-top: 5px solid #999;
+    padding: 4px;
+}
+
+input[type=number]{
+    width: 50%;
+    padding: 0px;
+}
+
+
+.page {
+        position: relative;
+        background-color: white;
+        width: 80%;
+        margin: auto;
+         height: 1000px;
+         padding: 5px;
+
+}
+
+body {
+
+        font-family: "FuturaEF-Book";
+        font-size: 12px;
+        background-color: #262626;
+}
+
+.canv{
+    border: 1px solid black;
+    position: relative;
+    background-color: #94E4FF;
+}
+
+.page_content{
+    padding: 10px;
+    font-size: 15px;
+}
+
+.fraction {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0.2em 0.4ex;
+    text-align: center;
+}
+.fraction > span {
+    display: block;
+    padding-top: 0.15em;
+}
+.fraction span.fdn {border-top: thin solid black;}
+.fraction span.bar {display: none;}
+
+.pk_buttons{
+    width: 30px;
+    float: right;
+
+}

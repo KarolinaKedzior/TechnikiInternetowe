@@ -1,0 +1,10 @@
+applications:
+- disk_quota: 128M
+  buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+  host: KedziorP1ti2016
+  name: KedziorP1ti2016 
+  path: .
+  domain: eu-gb.mybluemix.net
+  instances: 1
+  memory: 128M
+

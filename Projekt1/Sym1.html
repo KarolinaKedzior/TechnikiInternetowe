@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Projekt</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="page" id="page">
+    <nav style="position: relative" >
+      <h1 class="toph">Grawitacja - Symulacje fizyczne</h1>
+      <img src="rakieta.png" alt="Empty" class = "logo">
+      <div class ="linebreak"></div>
+     <ul class="menu">
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="Teoria.html" >Teoria</a>  </li>
+        <li> <a href="Instrukcja.html" > Instrukcja</a> </li>
+        <li class= "dropdown"> <a class="drop" >Symulacje</a>
+        <div class="dropdown-content">
+          <a href="Sym1.html" class="active" >Przyciąganie grawitacyjne</a>
+          <a href="Sym2.html"  >Prędkości kosmiczne</a>
+         </div>
+         </li>
+      
+     </ul>
+    </nav>
+    <div class="page_content">
+    <h1>Parametry:</h1>
+    <table class="parameters_table">
+           <tr >
+              <td> n :  <input type="number" id="n" value = "2"  min="2" max="4" > </td>
+              <td> dt: <input type="number" id="animation_speed" value = "110000" min="0" step= "4000" oninput="changeSpeed()"> </td>
+              <td></td><td></td>
+           </tr>
+           <tr>
+               <td> x1: <input type="number" id="x1" value = "1" oninput="draw()"> </td>
+               <td> y1: <input type="number" id="y1" value = "0" oninput="draw()"></td>
+               <td> vx1: <input type="number" id="predx1" value = "0" oninput="draw()"> </td>
+               <td> vy1: <input type="number" id="predy1" value = "-8" oninput="draw()"> </td>
+               <td> m1: <input type="number" id="masa1" value = "100000" min="0" oninput="draw()"> </td>
+           </tr>
+           <tr>
+               <td> x2: <input type="number" id="x2" value = "0"  oninput="draw()"> </td>
+               <td> y2: <input type="number" id="y2" value = "0"  oninput="draw()" > </td>
+               <td> vx2: <input type="number" id="predx2" value = "0" oninput="draw()" > </td>
+               <td> vy2: <input type="number" id="predy2" value = "8"  oninput="draw()"> </td>
+               <td> m2: <input type="number" id="masa2" value = "100000"  min="0" oninput="draw()"> </td>
+           </tr>
+           <tr id = "obj3" style = "display: none">
+               <td> x3: <input type="number" id="x3" value = "0" oninput="draw()"> </td>
+               <td> y3: <input type="number" id="y3" value = "1.73" oninput="draw()"> </td>
+               <td> vx3: <input type="number" id="predx3" value = "0" oninput="draw()"> </td>
+               <td> vy3: <input type="number" id="predy3" value = "0" oninput="draw()"> </td>
+               <td> m3: <input type="number" id="masa3" value = "100000" min="0" oninput="draw()"> </td>
+           </tr>
+           <tr id = "obj4" style = "display: none">
+               <td> x4: <input type="number" id="x4" value = "0" oninput="draw()"> </td>
+               <td> y4: <input type="number" id="y4" value = "2" oninput="draw()"> </td>
+               <td> vx4: <input type="number" id="predx4" value = "0" oninput="draw()"> </td>
+               <td> vy4: <input type="number" id="predy4" value = "0" oninput="draw()"> </td>
+               <td> m4: <input type="number" id="masa4" value = "100000" min="0" oninput="draw()"> </td>
+           </tr>
+           </table>
+          <button type="button" id="start_button" onclick= "test()" class="run_button" >Start</button>
+          <button type="button" id="pause_button" class="stop_button" >Zatrzymaj</button>
+          <canvas class="canv" id="myCanvas" width="700" height="700" ></canvas>
+          <script src="Sym1.js"></script>
+           </div>
+          <div id = "footer">
+    <p>Copyright © 2016  Karolina Kędzior   </p>
+    </div>
+
+</div>
+
+</body>
+</html>

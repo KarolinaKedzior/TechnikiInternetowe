@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Projekt</title> 
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="page" id="page">
+     <nav style="position: relative" >
+      <h1 class="toph">Grawitacja - Symulacje fizyczne</h1>
+      <img src="rakieta.png" alt="Empty" class = "logo">
+      <div class ="linebreak"></div>
+     <ul class="menu">
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="Teoria.html" >Teoria</a>  </li>
+          <li> <a href="Instrukcja.html" >Instrukcja</a> </li>
+        <li class= "dropdown"> <a class="drop"  >Symulacje</a>
+        <div class="dropdown-content">
+          <a href="Sym1.html"  >Przyciąganie grawitacyjne</a>
+          <a href="Sym2.html" class="active" >Prędkości kosmiczne</a>
+         </div>
+         </li>   
+     </ul>
+    </nav>
+    <div class="page_content">
+        <canvas class="canv" style="float: left" id="myCanvas" width="500" height="500"></canvas>
+        <table class="parameters_table1">
+        <tr><th>Predkosc wyrzucanej kulki [m/s]:</th><td> <input type="number" id="pred" value = "8900" min="0"></td> </tr>
+        <tr><th style="float: left">Krok czasowy dt [s]: </th><td><input type="number" id="animation_speed" value = "10" oninput="changeSpeed()" min="0"></td></tr>
+        </table>
+        <button type="button" id="start_button" onclick= "test()" > Start </button>
+       <script src="Sym2.js"></script>
+  </div>
+    <div id = "footer">
+    <p>Copyright © 2016  Karolina Kędzior </p>
+    </div>
+</div>
+</body>
+</html>
